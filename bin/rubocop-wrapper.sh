@@ -1,5 +1,5 @@
 #!/bin/sh -e
 
 bundle install >/dev/null
-bundle exec rubocop --color "$@"
+bundle exec rubocop -a --color "$@"
 git add -u
