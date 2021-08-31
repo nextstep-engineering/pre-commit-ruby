@@ -1,4 +1,4 @@
 #!/bin/sh
 
 bundle install >/dev/null
-bundle exec erblint --config .erb-lint.yml --autocorrect "$@"
+bundle exec erblint --config .erb-lint.yml --autocorrect "$@" && git add -u && !!
